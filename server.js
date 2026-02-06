@@ -1,13 +1,16 @@
 const express = require("express");
 const cors = require("cors");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 // ================= CONFIG =================
-const PORT = 3000;
-const API_KEY = "esp32_TEMP_9fA3kLxP_2026";
+const PORT = process.env.PORT || 3000;
+const API_KEY = process.env.API_KEY || "esp32_TEMP_9fA3kLxP_2026";
 
 // =========================================
 

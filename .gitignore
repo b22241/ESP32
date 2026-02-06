@@ -1,1 +1,3 @@
-node_modulesgi
+node_modules
+PORT=3000
+API_KEY="esp32_TEMP_9fA3kLxP_2026"
